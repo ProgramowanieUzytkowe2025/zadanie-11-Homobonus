@@ -1,25 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState } from 'react';
+import AppHeader from "./components/AppHeader";
+import AppCalculator from "./components/AppCalculator";
+import 'bootstrap/dist/css/bootstrap.min.css';
+// import AppCalculationHistory (dodaj, gdy będziesz gotowy na historię)
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+export default function App() {
+    // Stan globalnej czcionki
+    const [globalFontSize, setGlobalFontSize] = useState("font-medium");
+    console.log(globalFontSize)
+    return (
+      <div className={`container my-4 `} style={{ fontSize: `${globalFontSize}px` }}>
+        <AppHeader 
+            author="Mikołaj Manowski" 
+            setGlobalFontSize={setGlobalFontSize} // Przekazanie funkcji do zmiany stanu
+            currentSize={globalFontSize} // Przekazanie aktualnego rozmiaru
+        />
+        <AppCalculator />
+      </div>
+    );
 }
-
-export default App;
