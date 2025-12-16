@@ -1,8 +1,3 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-/* Opcjonalny styl paska przewijania dla sekcji historii */
 .custom-scrollbar::-webkit-scrollbar {
   width: 6px;
 }
@@ -15,15 +10,13 @@
 }
 
 .font-medium {
-  --bs-body-font-size: 1rem; /* Standardowy rozmiar Bootstrap */
+  --bs-body-font-size: 1rem; 
 }
 
-/* Mniejszy rozmiar */
 .font-small {
   --bs-body-font-size: 0.85rem;
 }
 
-/* Większy rozmiar */
 .font-large {
   --bs-body-font-size: 1.25rem;
 }

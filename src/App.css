@@ -1,9 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-
 body {
     transition: font-size 0.3s ease-in-out;
-    font-family: 'Inter', sans-serif; /* Załóżmy, że używasz Inter lub innej nowoczesnej czcionki */
+    font-family: 'Inter', sans-serif; 
 }

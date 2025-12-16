@@ -78,7 +78,7 @@ export default function AppCalculator() {
           />
         </div>
 
-        <div className="d-flex gap-2">
+        <div className="d-flex gap-2 justify-content-center">
           <AppActionButton label="+" onClick={() => calculate("+")} disabled={!inputsValid} />
           <AppActionButton label="-" onClick={() => calculate("-")} disabled={!inputsValid} />
           <AppActionButton label="*" onClick={() => calculate("*")} disabled={!inputsValid} />
